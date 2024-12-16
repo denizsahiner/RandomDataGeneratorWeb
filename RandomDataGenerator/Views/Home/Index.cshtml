@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Random DATA";
+}
+<link rel="stylesheet" href="~/css/styles.css" />
+
+<div class="container">
+    <div class="header">
+        <h1>RandomDATA</h1>
+        <div class="menu-icon">&#9776;</div>
+    </div>
+    <div class="field-list">
+        <div class="field-container">
+            <input type="text" placeholder="Field Name">
+            <select class="type-dropdown">
+                <option value="string">String</option>
+                <option value="number">Number</option>
+                <option value="boolean">Boolean</option>
+                <option value="date">Date</option>
+            </select>
+            <button class="deleteField">&times;</button>
+        </div>
+    </div>
+    <div class="add-buttons">
+        <button id="addField">+ Add Another</button>
+        <button id="generateData">Generate Data</button>
+    </div>
+</div>
+
+<script>
+    // Field ekleme işlevi
+    document.getElementById('addField').addEventListener('click', () => {
+        const fieldList = document.querySelector('.field-list');
+        const newField = document.createElement('div');
+        newField.className = 'field-container';
+        newField.innerHTML = `
+            <input type="text" placeholder="Field Name">
+            <select class="type-dropdown">
+                <option value="string">String</option>
+                <option value="number">Number</option>
+                <option value="boolean">Boolean</option>
+                <option value="date">Date</option>
+            </select>
+            <button class="deleteField">&times;</button>
+        `;
+        fieldList.appendChild(newField);
+        attachDeleteEvent(newField.querySelector('.deleteField'));
+    });
+
+    // Field silme işlevi
+    function attachDeleteEvent(button) {
+        button.addEventListener('click', () => {
+            button.parentElement.remove();
+        });
+    }
+
+    // Var olan silme butonlarına event ekle
+    document.querySelectorAll('.deleteField').forEach(button => {
+        attachDeleteEvent(button);
+    });
+
+    // Generate Data butonu için işlev
+    document.getElementById('generateData').addEventListener('click', () => {
+        alert('Data generated successfully! (Veri oluşturma işlevini burada geliştirebilirsiniz.)');
+    });
+</script>
