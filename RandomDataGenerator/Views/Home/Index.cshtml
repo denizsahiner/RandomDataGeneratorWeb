@@ -16,6 +16,12 @@
                 <option value="number">Number</option>
                 <option value="boolean">Boolean</option>
                 <option value="date">Date</option>
+                <option value="firstName">First Name</option>
+                <option value="middleName">Middle Name</option>
+                <option value="lastName">Surname</option>
+                <option value="gender">Gender</option>
+                <option value="ssn">Social Security Number</option>
+                <option value="salary">Salary</option>
             </select>
             <button class="deleteField">&times;</button>
         </div>
@@ -28,39 +34,66 @@
 </div>
 
 <script>
-    // Field ekleme işlevi
-    document.getElementById('addField').addEventListener('click', () => {
+    document.addEventListener('DOMContentLoaded', () => {
         const fieldList = document.querySelector('.field-list');
-        const newField = document.createElement('div');
-        newField.className = 'field-container';
-        newField.innerHTML =
-            <input type="text" placeholder="Field Name">
-            <select class="type-dropdown">
-                <option value="string">String</option>
-                <option value="number">Number</option>
-                <option value="boolean">Boolean</option>
-                <option value="date">Date</option>
-            </select>
-            <button class="deleteField">&times;</button>
-        ;
-        fieldList.appendChild(newField);
-        attachDeleteEvent(newField.querySelector('.deleteField'));
-    });
+        const addFieldButton = document.getElementById('addField');
+        const generateDataButton = document.getElementById('generateData');
 
-    // Field silme işlevi
-    function attachDeleteEvent(button) {
-        button.addEventListener('click', () => {
-            button.parentElement.remove();
+        // Field ekleme işlevi
+        const handleAddField = () => {
+            const newField = document.createElement('div');
+            newField.className = 'field-container';
+            newField.innerHTML = `
+                <input type="text" placeholder="Field Name">
+                <select class="type-dropdown">
+                    <option value="string">String</option>
+                    <option value="number">Number</option>
+                    <option value="boolean">Boolean</option>
+                    <option value="date">Date</option>
+                </select>
+                <button class="deleteField">&times;</button>
+            `;
+            fieldList.appendChild(newField);
+        };
+
+        // Field ekleme işlevine tek bir olay bağlama
+        addFieldButton.removeEventListener('click', handleAddField); // Olası fazladan bağlamaları kaldırır
+        addFieldButton.addEventListener('click', handleAddField);
+
+        // Field silme işlevi (Event Delegation)
+        fieldList.addEventListener('click', (e) => {
+            if (e.target.classList.contains('deleteField')) {
+                e.target.parentElement.remove();
+            }
         });
-    }
 
-    // Silme butonu eventi
-    document.querySelectorAll('.deleteField').forEach(button => {
-        attachDeleteEvent(button);
-    });
+        // Generate Data butonu
+        generateDataButton.addEventListener('click', () => {
+            const fields = [];
+            fieldList.querySelectorAll('.field-container').forEach(container => {
+                const fieldName = container.querySelector('input').value.trim();
+                const fieldType = container.querySelector('select').value;
+                if (fieldName) {
+                    fields.push({ name: fieldName, type: fieldType });
+                }
+            });
 
-    // Generate Data butonu
-    document.getElementById('generateData').addEventListener('click', () => {
-        alert('Data generated successfully!');
+            if (fields.length === 0) {
+                alert('Please add at least one field.');
+                return;
+            }
+
+            // Backend'e veri gönderme (örnek JSON POST isteği)
+            fetch('/GenerateData', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ fields })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('generatedData').textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error:', error));
+        });
     });
 </script>

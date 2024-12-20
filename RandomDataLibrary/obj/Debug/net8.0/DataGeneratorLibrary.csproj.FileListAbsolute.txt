@@ -10,3 +10,6 @@ C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\
 C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Debug\net8.0\refint\DataGeneratorLibrary.dll
 C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Debug\net8.0\DataGeneratorLibrary.pdb
 C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Debug\net8.0\ref\DataGeneratorLibrary.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\bin\Debug\net8.0\DataGeneratorLibrary.runtimeconfig.json
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Debug\net8.0\DataGeneratorLibrary.csproj.AssemblyReference.cache
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Debug\net8.0\DataGeneratorLibrary.genruntimeconfig.cache
