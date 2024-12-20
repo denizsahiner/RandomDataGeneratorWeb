@@ -24,6 +24,7 @@
         <button id="addField">+ Add Another</button>
         <button id="generateData">Generate Data</button>
     </div>
+    <div id="generatedData"></div>
 </div>
 
 <script>
@@ -32,7 +33,7 @@
         const fieldList = document.querySelector('.field-list');
         const newField = document.createElement('div');
         newField.className = 'field-container';
-        newField.innerHTML = `
+        newField.innerHTML =
             <input type="text" placeholder="Field Name">
             <select class="type-dropdown">
                 <option value="string">String</option>
@@ -41,7 +42,7 @@
                 <option value="date">Date</option>
             </select>
             <button class="deleteField">&times;</button>
-        `;
+        ;
         fieldList.appendChild(newField);
         attachDeleteEvent(newField.querySelector('.deleteField'));
     });
@@ -53,13 +54,13 @@
         });
     }
 
-    // Var olan silme butonlarına event ekle
+    // Silme butonu eventi
     document.querySelectorAll('.deleteField').forEach(button => {
         attachDeleteEvent(button);
     });
 
-    // Generate Data butonu için işlev
+    // Generate Data butonu
     document.getElementById('generateData').addEventListener('click', () => {
-        alert('Data generated successfully! (Veri oluşturma işlevini burada geliştirebilirsiniz.)');
+        alert('Data generated successfully!');
     });
 </script>

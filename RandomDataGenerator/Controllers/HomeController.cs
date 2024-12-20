@@ -1,32 +1,39 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using RandomDataGenerator.Models;
+using RandomDataGenerator.Services;  // DataGeneratorService için doðru namespace
+using System.Collections.Generic;
 
 namespace RandomDataGenerator.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly DataGeneratorService _dataGeneratorService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(DataGeneratorService dataGeneratorService)
         {
-            _logger = logger;
+            _dataGeneratorService = dataGeneratorService;
         }
 
+        // Ana sayfa (Index) aksiyonu
         public IActionResult Index()
         {
             return View();
         }
 
+        // Privacy aksiyonu, string türünde rastgele veri üretip Privacy view'ine gönderir
         public IActionResult Privacy()
         {
+            var randomString = _dataGeneratorService.GenerateRandomData("string");
+            ViewData["RandomData"] = randomString; // ViewData ile gönderiyoruz
             return View();
         }
 
+        // Error aksiyonu, string türünde rastgele veri üretip Error view'ine gönderir
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var randomString = _dataGeneratorService.GenerateRandomData("string");
+            ViewData["RandomData"] = randomString; // ViewData ile gönderiyoruz
+            return View();
         }
     }
 }

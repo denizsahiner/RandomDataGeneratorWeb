@@ -1,6 +1,17 @@
 using Microsoft.AspNetCore.Authentication.Negotiate;
+using Microsoft.EntityFrameworkCore;
+using RandomDataGenerator.Data;
+using RandomDataGenerator.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite("Data Source=fields.db"));
+
+// DataGeneratorService'i DI container'a kaydediyoruz
+builder.Services.AddScoped<DataGeneratorService>();
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

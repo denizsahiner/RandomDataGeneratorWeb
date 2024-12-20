@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, #2c3e50, #3498db); /* Koyu ve açık mavi degrade */
+    background-color: #8e44ad; /* Mor arka plan */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,10 @@ body {
         color: #2c3e50;
     }
 
+.field-list {
+    margin-bottom: 20px;
+}
+
 .field-container {
     display: flex;
     align-items: center;
@@ -70,7 +74,8 @@ body {
         border-radius: 50%;
         cursor: pointer;
         font-weight: bold;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease;
+        flex-shrink: 0; /* Buton küçülmesin */
     }
 
         .field-container button:hover {
@@ -83,6 +88,7 @@ body {
     justify-content: space-between;
     gap: 10px;
     margin-top: 15px;
+    flex-wrap: wrap; /* Butonların taşmasını engeller */
 }
 
     .add-buttons button {
@@ -94,7 +100,7 @@ body {
         font-weight: bold;
         cursor: pointer;
         color: white;
-        transition: all 0.3s ease;
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
         .add-buttons button#addField {
