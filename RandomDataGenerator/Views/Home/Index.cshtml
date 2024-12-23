@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Random DATA";
 }
-<link rel="stylesheet" href="~/css/styles.css" />
+<link rel="stylesheet" href="~/css/Style.css" />
 
 <div class="container">
     <div class="header">
@@ -12,10 +12,10 @@
         <div class="field-container">
             <input type="text" placeholder="Field Name">
             <select class="type-dropdown">
-                <option value="string">String</option>
-                <option value="number">Number</option>
-                <option value="boolean">Boolean</option>
-                <option value="date">Date</option>
+                <option value="String">String</option>
+                <option value="Number">Number</option>
+                <option value="Boolean">Boolean</option>
+                <option value="Date">Date</option>
                 <option value="firstName">First Name</option>
                 <option value="middleName">Middle Name</option>
                 <option value="lastName">Surname</option>
@@ -30,7 +30,19 @@
         <button id="addField">+ Add Another</button>
         <button id="generateData">Generate Data</button>
     </div>
-    <div id="generatedData"></div>
+    <div id="generatedDataTableContainer">
+        <table id="generatedDataTable">
+            <thead>
+                <tr>
+                    <th>Field Name</th>
+                    <th>Field Type</th>
+                    <th>Generated Value</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <script>
@@ -38,6 +50,7 @@
         const fieldList = document.querySelector('.field-list');
         const addFieldButton = document.getElementById('addField');
         const generateDataButton = document.getElementById('generateData');
+        const tableBody = document.querySelector('#generatedDataTable tbody');
 
         // Field ekleme işlevi
         const handleAddField = () => {
@@ -46,21 +59,26 @@
             newField.innerHTML = `
                 <input type="text" placeholder="Field Name">
                 <select class="type-dropdown">
-                    <option value="string">String</option>
-                    <option value="number">Number</option>
-                    <option value="boolean">Boolean</option>
-                    <option value="date">Date</option>
+                    <option value="String">String</option>
+                    <option value="Number">Number</option>
+                    <option value="Boolean">Boolean</option>
+                    <option value="Date">Date</option>
+                    <option value="firstName">First Name</option>
+                    <option value="middleName">Middle Name</option>
+                    <option value="lastName">Surname</option>
+                    <option value="gender">Gender</option>
+                    <option value="ssn">Social Security Number</option>
+                    <option value="salary">Salary</option>
                 </select>
                 <button class="deleteField">&times;</button>
             `;
             fieldList.appendChild(newField);
         };
 
-        // Field ekleme işlevine tek bir olay bağlama
-        addFieldButton.removeEventListener('click', handleAddField); // Olası fazladan bağlamaları kaldırır
+        // Field ekleme işlevine olay bağlama
         addFieldButton.addEventListener('click', handleAddField);
 
-        // Field silme işlevi (Event Delegation)
+        // Field silme işlevi
         fieldList.addEventListener('click', (e) => {
             if (e.target.classList.contains('deleteField')) {
                 e.target.parentElement.remove();
@@ -78,22 +96,40 @@
                 }
             });
 
-            if (fields.length === 0) {
-                alert('Please add at least one field.');
-                return;
-            }
+           
 
-            // Backend'e veri gönderme (örnek JSON POST isteği)
-            fetch('/GenerateData', {
+            // Backend'e veri gönderme
+            fetch('/Home/GenerateData', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ fields })
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(fields)
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
-                document.getElementById('generatedData').textContent = JSON.stringify(data, null, 2);
+                console.log(data); // Veriyi kontrol edin
+
+                // Tablonun içeriğini temizle
+                tableBody.innerHTML = '';
+
+                // Yeni veriyi tabloya ekleme
+                data.forEach(item => {
+                    const row = tableBody.insertRow();
+                    row.insertCell(0).textContent = item.name;
+                    row.insertCell(1).textContent = item.type;
+                    row.insertCell(2).textContent = item.generatedValue;
+                });
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while generating data.');
+            });
         });
     });
 </script>

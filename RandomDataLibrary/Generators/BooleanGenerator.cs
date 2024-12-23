@@ -15,9 +15,5 @@ namespace DataGeneratorLibrary.Generators
         {
             return _random.Next(0, 2) == 1; 
         }
-        public void SetDataSource(IEnumerable<object> data)
-        {
-            throw new NotImplementedException("BooleanGenerator does not support data sources.");
-        }
     }
 }

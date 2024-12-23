@@ -16,9 +16,5 @@ namespace DataGeneratorLibrary.Generators
            
             return DateTime.MinValue.AddDays(RandomGenerator.Next(range));
         }       
-        public void SetDataSource(IEnumerable<object> data)
-        {
-            throw new NotImplementedException("DateGenerator does not support data sources.");
-        }
     }
 }

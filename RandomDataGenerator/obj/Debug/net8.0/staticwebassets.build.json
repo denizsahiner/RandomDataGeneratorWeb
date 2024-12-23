@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TVdfQLZL6OLGkumtQJ5J31bLUyQQN0d0qErkMIc4MKs=",
+  "Hash": "B1q6pvLhGbbfNMqw7aKTOf053AlK4PWNuUyCj/sLCYA=",
   "Source": "RandomDataGenerator",
   "BasePath": "_content/RandomDataGenerator",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mex7jrvdr5",
-      "Integrity": "Iuz4oHRgl/WgLIjS/bDVhA8YGkTsYw5eWgMsiY/6vt0=",
+      "Fingerprint": "riphutr11n",
+      "Integrity": "jQJcaO9bp6yylWVSJ2vivCPKfV7Z8UqSnI3E2TgZkjM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1338,27 +1338,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\Style.css",
-      "SourceId": "RandomDataGenerator",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\",
-      "BasePath": "_content/RandomDataGenerator",
-      "RelativePath": "Style#[.{fingerprint}]?.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "9rui3iff3y",
-      "Integrity": "NYfMIdXEbx5stjBhKKUkSDCl+h9H5we10NJeZQVDJyY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Style.css"
     }
   ],
   "Endpoints": [
@@ -1619,7 +1598,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1334"
+          "Value": "1466"
         },
         {
           "Name": "Content-Type",
@@ -1627,11 +1606,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Iuz4oHRgl/WgLIjS/bDVhA8YGkTsYw5eWgMsiY/6vt0=\""
+          "Value": "\"jQJcaO9bp6yylWVSJ2vivCPKfV7Z8UqSnI3E2TgZkjM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 12:23:28 GMT"
+          "Value": "Mon, 23 Dec 2024 14:10:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1641,12 +1620,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Iuz4oHRgl/WgLIjS/bDVhA8YGkTsYw5eWgMsiY/6vt0="
+          "Value": "sha256-jQJcaO9bp6yylWVSJ2vivCPKfV7Z8UqSnI3E2TgZkjM="
         }
       ]
     },
     {
-      "Route": "js/site.mex7jrvdr5.js",
+      "Route": "js/site.riphutr11n.js",
       "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1656,7 +1635,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1334"
+          "Value": "1466"
         },
         {
           "Name": "Content-Type",
@@ -1664,11 +1643,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Iuz4oHRgl/WgLIjS/bDVhA8YGkTsYw5eWgMsiY/6vt0=\""
+          "Value": "\"jQJcaO9bp6yylWVSJ2vivCPKfV7Z8UqSnI3E2TgZkjM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 12:23:28 GMT"
+          "Value": "Mon, 23 Dec 2024 14:10:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1678,7 +1657,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mex7jrvdr5"
+          "Value": "riphutr11n"
         },
         {
           "Name": "label",
@@ -1686,7 +1665,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Iuz4oHRgl/WgLIjS/bDVhA8YGkTsYw5eWgMsiY/6vt0="
+          "Value": "sha256-jQJcaO9bp6yylWVSJ2vivCPKfV7Z8UqSnI3E2TgZkjM="
         }
       ]
     },
@@ -6387,7 +6366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 19:25:27 GMT"
+          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6432,7 +6411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 19:25:27 GMT"
+          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6477,7 +6456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 19:25:27 GMT"
+          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6514,7 +6493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 19:25:27 GMT"
+          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6525,88 +6504,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-8bEbmVkNcXFg/5UNPkRuu7m6Q+OBJ2WetJDeU4T5jwo="
-        }
-      ]
-    },
-    {
-      "Route": "Style.9rui3iff3y.css",
-      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\Style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2504"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NYfMIdXEbx5stjBhKKUkSDCl+h9H5we10NJeZQVDJyY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 00:39:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9rui3iff3y"
-        },
-        {
-          "Name": "label",
-          "Value": "Style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-NYfMIdXEbx5stjBhKKUkSDCl+h9H5we10NJeZQVDJyY="
-        }
-      ]
-    },
-    {
-      "Route": "Style.css",
-      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\Style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2504"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"NYfMIdXEbx5stjBhKKUkSDCl+h9H5we10NJeZQVDJyY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 16 Dec 2024 00:39:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-NYfMIdXEbx5stjBhKKUkSDCl+h9H5we10NJeZQVDJyY="
         }
       ]
     }

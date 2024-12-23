@@ -1,12 +1,6 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-
-document.getElementById('generateData').addEventListener('click', () => {
-
+﻿document.getElementById('generateData').addEventListener('click', () => {
     const fields = [];
+
     document.querySelectorAll('.field-container').forEach(container => {
         const fieldName = container.querySelector('input').value.trim();
         const fieldType = container.querySelector('select').value;
@@ -22,7 +16,7 @@ document.getElementById('generateData').addEventListener('click', () => {
     if (fields.length > 0) {
         fetch('/Home/GenerateData', {
             method: 'POST',
-            header: {
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(fields)
@@ -30,13 +24,18 @@ document.getElementById('generateData').addEventListener('click', () => {
             .then(response => response.json())
             .then(data => {
                 console.log('Generated Data:', data);
-                alert('Data generated Succesfully!');
+                const table = document.getElementById('generatedDataTable');
+                table.querySelector('tbody').innerHTML = ''; // Eski veriyi temizle
+
+                data.forEach(item => {
+                    const row = table.querySelector('tbody').insertRow();
+                    row.insertCell(0).textContent = item.name;
+                    row.insertCell(1).textContent = item.type;
+                    row.insertCell(2).textContent = item.generatedValue;
+                });
             })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+            
     } else {
         alert('Please add at least one field.');
     }
 });
-

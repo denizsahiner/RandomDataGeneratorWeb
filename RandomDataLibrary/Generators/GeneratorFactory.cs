@@ -1,0 +1,26 @@
+﻿using DataGeneratorLibrary.Generators;
+
+public static class GeneratorFactory
+{
+    public static IGenerator CreateGenerator(string dataType, string connectionString )
+    {
+        return dataType switch
+        {          
+            "firstName" => new DatabaseValueGenerator(connectionString, "firstName"),
+            "lastName" => new DatabaseValueGenerator(connectionString, "lastName"),
+            "gender" => new DatabaseValueGenerator(connectionString, "gender"),
+            _ => throw new ArgumentException("Invalid data type selected")
+        };
+    }
+    public static IGenerator CreateGenerator(string dataType)
+    {
+        return dataType switch
+        {
+            "String" => new StringGenerator(),
+            "Number" => new NumberGenerator(),
+            "Boolean" => new BooleanGenerator(),
+            "Date" => new DateGenerator(),   
+            _ => throw new ArgumentException("Invalid data type selected")
+        };
+    }
+}

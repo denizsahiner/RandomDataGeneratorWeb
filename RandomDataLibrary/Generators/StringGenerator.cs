@@ -9,7 +9,7 @@ namespace DataGeneratorLibrary.Generators
 {
     public class StringGenerator : IGenerator
     {
-        private Random _random = new Random();
+        private readonly Random _random = new();
 
         public string DataType => "String";
 
@@ -17,10 +17,6 @@ namespace DataGeneratorLibrary.Generators
         {
             var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
             return new string(Enumerable.Repeat(chars, 8).Select(s => s[_random.Next(s.Length)]).ToArray());
-        }
-        public void SetDataSource(IEnumerable<object> data)
-        {
-            throw new NotImplementedException("StringGenerator does not support data sources.");
         }
     }
 }

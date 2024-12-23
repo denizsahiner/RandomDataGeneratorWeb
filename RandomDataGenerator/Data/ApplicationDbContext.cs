@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RandomDataGenerator.Data.Models;
+using RandomDataGenerator.Models;
 
 namespace RandomDataGenerator.Data
 {

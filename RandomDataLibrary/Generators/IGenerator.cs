@@ -11,6 +11,6 @@ namespace DataGeneratorLibrary.Generators
         object GenerateRandomValue();
         string DataType { get; }
 
-        void SetDataSource(IEnumerable<object> data);
+       
     }
 }

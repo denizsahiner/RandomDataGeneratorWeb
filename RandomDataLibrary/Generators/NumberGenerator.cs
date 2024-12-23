@@ -16,9 +16,5 @@ namespace DataGeneratorLibrary.Generators
         {
             return _random.Next(1, 100); // 1 ile 100 arasında rastgele sayı
         }
-        public void SetDataSource(IEnumerable<object> data)
-        {
-            throw new NotImplementedException("Integer does not support data sources.");
-        }
     }
 }

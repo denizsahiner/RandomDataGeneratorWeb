@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RandomDataGenerator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e947be060098bd39a302ab17228b72289f77c5c6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d2100c8b8dccae025387451915ea39917d4aa22")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomDataGenerator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomDataGenerator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,16 +1,20 @@
+ï»¿using DataGeneratorLibrary.Generators;
 using Microsoft.AspNetCore.Mvc;
-using RandomDataGenerator.Services;  // DataGeneratorService için doðru namespace
+using Microsoft.Extensions.Configuration;
+using RandomDataGenerator.Models;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace RandomDataGenerator.Controllers
-{
+{   
     public class HomeController : Controller
     {
-        private readonly DataGeneratorService _dataGeneratorService;
+        private readonly IConfiguration _configuration;
 
-        public HomeController(DataGeneratorService dataGeneratorService)
+        // Constructor'da IConfiguration ile baÄŸlantÄ± dizesini alÄ±yoruz
+        public HomeController(IConfiguration configuration)
         {
-            _dataGeneratorService = dataGeneratorService;
+            _configuration = configuration;
         }
 
         // Ana sayfa (Index) aksiyonu
@@ -19,21 +23,51 @@ namespace RandomDataGenerator.Controllers
             return View();
         }
 
-        // Privacy aksiyonu, string türünde rastgele veri üretip Privacy view'ine gönderir
-        public IActionResult Privacy()
+        // POST aksiyonu: KullanÄ±cÄ±nÄ±n seÃ§tiÄŸi veri tiplerine gÃ¶re veri Ã¼retme iÅŸlemi
+        [HttpPost("/Home/GenerateData")]
+        public IActionResult GenerateData([FromBody] List<Field> fields)
         {
-            var randomString = _dataGeneratorService.GenerateRandomData("string");
-            ViewData["RandomData"] = randomString; // ViewData ile gönderiyoruz
-            return View();
+            var generatedData = new List<object>();
+
+            try
+            {
+                foreach (var field in fields)
+                {
+                    if (string.IsNullOrEmpty(field.Type))
+                    {
+                        return BadRequest(new { message = "Field type cannot be null or empty." });
+                    }
+
+                    IGenerator generator;
+                    var connectionString = _configuration.GetConnectionString("DefaultConnection") ?? string.Empty;
+
+                    if (AllowedColumns.Columns.Contains(field.Type))
+                    {
+                        generator = GeneratorFactory.CreateGenerator(field.Type, connectionString);
+                    }
+                    else
+                    {
+                        generator = GeneratorFactory.CreateGenerator(field.Type);
+                    }
+
+                    var generatedValue = generator.GenerateRandomValue();
+
+                    generatedData.Add(new
+                    {
+                        field.Name,
+                        field.Type,
+                        GeneratedValue = generatedValue
+                    });
+                }
+
+                return Json(generatedData);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return StatusCode(500, new { message = "An error occurred while generating data", error = ex.Message });
+            }
         }
 
-        // Error aksiyonu, string türünde rastgele veri üretip Error view'ine gönderir
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            var randomString = _dataGeneratorService.GenerateRandomData("string");
-            ViewData["RandomData"] = randomString; // ViewData ile gönderiyoruz
-            return View();
-        }
     }
 }
