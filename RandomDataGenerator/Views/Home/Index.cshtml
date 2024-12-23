@@ -5,12 +5,13 @@
 
 <div class="container">
     <div class="header">
-        <h1>RandomDATA</h1>
+        <h1>Random DATA Generator</h1>
         <div class="menu-icon">&#9776;</div>
     </div>
     <div class="field-list">
+        <!-- İlk alanı varsayılan olarak ekledik -->
         <div class="field-container">
-            <input type="text" placeholder="Field Name">
+            <input type="text" placeholder="Field Name" />
             <select class="type-dropdown">
                 <option value="String">String</option>
                 <option value="Number">Number</option>
@@ -23,13 +24,15 @@
                 <option value="ssn">Social Security Number</option>
                 <option value="salary">Salary</option>
             </select>
-            <button class="deleteField">&times;</button>
+            <button class="deleteField" title="Delete Field">&times;</button>
         </div>
     </div>
+
     <div class="add-buttons">
-        <button id="addField">+ Add Another</button>
+        <button id="addField">+ Add Another Field</button>
         <button id="generateData">Generate Data</button>
     </div>
+
     <div id="generatedDataTableContainer">
         <table id="generatedDataTable">
             <thead>
@@ -40,11 +43,11 @@
                 </tr>
             </thead>
             <tbody>
+                <!-- Tablo verileri buraya dinamik olarak eklenecek -->
             </tbody>
         </table>
     </div>
 </div>
-
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         const fieldList = document.querySelector('.field-list');
@@ -52,12 +55,12 @@
         const generateDataButton = document.getElementById('generateData');
         const tableBody = document.querySelector('#generatedDataTable tbody');
 
-        // Field ekleme işlevi
-        const handleAddField = () => {
+        // Alan ekleme işlevi
+        const addField = () => {
             const newField = document.createElement('div');
             newField.className = 'field-container';
             newField.innerHTML = `
-                <input type="text" placeholder="Field Name">
+                <input type="text" placeholder="Field Name" />
                 <select class="type-dropdown">
                     <option value="String">String</option>
                     <option value="Number">Number</option>
@@ -70,66 +73,74 @@
                     <option value="ssn">Social Security Number</option>
                     <option value="salary">Salary</option>
                 </select>
-                <button class="deleteField">&times;</button>
+                <button class="deleteField" title="Delete Field">&times;</button>
             `;
             fieldList.appendChild(newField);
         };
 
-        // Field ekleme işlevine olay bağlama
-        addFieldButton.addEventListener('click', handleAddField);
-
-        // Field silme işlevi
-        fieldList.addEventListener('click', (e) => {
+        // Alan silme işlevi
+        const deleteField = (e) => {
             if (e.target.classList.contains('deleteField')) {
                 e.target.parentElement.remove();
             }
-        });
+        };
 
-        // Generate Data butonu
-        generateDataButton.addEventListener('click', () => {
+        // Veri üretme işlevi
+        const generateData = () => {
             const fields = [];
             fieldList.querySelectorAll('.field-container').forEach(container => {
                 const fieldName = container.querySelector('input').value.trim();
                 const fieldType = container.querySelector('select').value;
+
                 if (fieldName) {
                     fields.push({ name: fieldName, type: fieldType });
                 }
             });
 
-           
+            if (fields.length === 0) {
+                alert('Please add at least one field before generating data.');
+                return;
+            }
 
-            // Backend'e veri gönderme
             fetch('/Home/GenerateData', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(fields)
+                body: JSON.stringify(fields),
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log(data); // Veriyi kontrol edin
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then((data) => {
+                    if (!Array.isArray(data) || data.length === 0) {
+                        alert('No data generated. Please check your backend logic.');
+                        return;
+                    }
 
-                // Tablonun içeriğini temizle
-                tableBody.innerHTML = '';
+                    // Tabloyu temizle
+                    tableBody.innerHTML = '';
 
-                // Yeni veriyi tabloya ekleme
-                data.forEach(item => {
-                    const row = tableBody.insertRow();
-                    row.insertCell(0).textContent = item.name;
-                    row.insertCell(1).textContent = item.type;
-                    row.insertCell(2).textContent = item.generatedValue;
+                    // Gelen veriyi tabloya ekle
+                    data.forEach((item) => {
+                        const row = tableBody.insertRow();
+                        row.insertCell(0).textContent = item.name;
+                        row.insertCell(1).textContent = item.type;
+                        row.insertCell(2).textContent = item.generatedValue;
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('An error occurred while generating data.');
                 });
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('An error occurred while generating data.');
-            });
-        });
+        };
+
+        // Olay bağlama
+        addFieldButton.addEventListener('click', addField);
+        fieldList.addEventListener('click', deleteField);
+        generateDataButton.addEventListener('click', generateData);
     });
 </script>

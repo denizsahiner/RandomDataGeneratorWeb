@@ -3,64 +3,69 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using RandomDataGenerator.Models;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace RandomDataGenerator.Controllers
-{   
+{
     public class HomeController : Controller
     {
         private readonly IConfiguration _configuration;
 
-        // Constructor'da IConfiguration ile bağlantı dizesini alıyoruz
         public HomeController(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        // Ana sayfa (Index) aksiyonu
         public IActionResult Index()
         {
             return View();
         }
 
-        // POST aksiyonu: Kullanıcının seçtiği veri tiplerine göre veri üretme işlemi
         [HttpPost("/Home/GenerateData")]
-        public IActionResult GenerateData([FromBody] List<Field> fields)
+        public IActionResult GenerateData([FromBody] List<Field> fields, int count = 10)
         {
-            var generatedData = new List<object>();
+            var generatedDataList = new List<Dictionary<string, object>>();
 
             try
             {
-                foreach (var field in fields)
+                for (int i = 0; i < count; i++)
                 {
-                    if (string.IsNullOrEmpty(field.Type))
+                    var row = new Dictionary<string, object>();
+
+                    foreach (var field in fields)
                     {
-                        return BadRequest(new { message = "Field type cannot be null or empty." });
+                        // Null kontrolü
+                        if (string.IsNullOrEmpty(field.Name))
+                        {
+                            return BadRequest(new { message = "Field name cannot be null or empty." });
+                        }
+
+                        if (string.IsNullOrEmpty(field.Type))
+                        {
+                            return BadRequest(new { message = "Field type cannot be null or empty." });
+                        }
+
+                        IGenerator generator;
+                        var connectionString = _configuration.GetConnectionString("DefaultConnection") ?? string.Empty;
+
+                        if (AllowedColumns.Columns.Contains(field.Type))
+                        {
+                            generator = GeneratorFactory.CreateGenerator(field.Type, connectionString);
+                        }
+                        else
+                        {
+                            generator = GeneratorFactory.CreateGenerator(field.Type);
+                        }
+
+                        var generatedValue = generator.GenerateRandomValue();
+
+                        // field.Name'in null olmadığından eminiz, o yüzden kullanıyoruz
+                        row[field.Name] = generatedValue;
                     }
 
-                    IGenerator generator;
-                    var connectionString = _configuration.GetConnectionString("DefaultConnection") ?? string.Empty;
-
-                    if (AllowedColumns.Columns.Contains(field.Type))
-                    {
-                        generator = GeneratorFactory.CreateGenerator(field.Type, connectionString);
-                    }
-                    else
-                    {
-                        generator = GeneratorFactory.CreateGenerator(field.Type);
-                    }
-
-                    var generatedValue = generator.GenerateRandomValue();
-
-                    generatedData.Add(new
-                    {
-                        field.Name,
-                        field.Type,
-                        GeneratedValue = generatedValue
-                    });
+                    generatedDataList.Add(row);
                 }
 
-                return Json(generatedData);
+                return Json(generatedDataList);
             }
             catch (Exception ex)
             {
@@ -68,6 +73,5 @@ namespace RandomDataGenerator.Controllers
                 return StatusCode(500, new { message = "An error occurred while generating data", error = ex.Message });
             }
         }
-
     }
 }
