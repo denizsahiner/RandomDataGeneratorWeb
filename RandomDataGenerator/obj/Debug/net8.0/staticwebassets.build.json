@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aEbGk5mGdh87Oc6vTKRsvH7wrX8IC/JaHvD4SIqu5gM=",
+  "Hash": "EuGqtJ2N0uPAlAGeTJOM4asyxShZmyWgoEK1uE7wvrA=",
   "Source": "RandomDataGenerator",
   "BasePath": "_content/RandomDataGenerator",
   "Mode": "Default",
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pyj0b0obov",
-      "Integrity": "EZAU1+sP/ssyipCsfZMfPGqyz81yj52aCjZMM0ucbE0=",
+      "Fingerprint": "590ocvyyh2",
+      "Integrity": "SR/cCvnR2mJP98GLRmmWOhiHmbr1mZDfVQFYe7FIKog=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1588,6 +1588,51 @@
       ]
     },
     {
+      "Route": "js/site.590ocvyyh2.js",
+      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2562"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SR/cCvnR2mJP98GLRmmWOhiHmbr1mZDfVQFYe7FIKog=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 24 Dec 2024 16:40:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "590ocvyyh2"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SR/cCvnR2mJP98GLRmmWOhiHmbr1mZDfVQFYe7FIKog="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1598,7 +1643,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2090"
+          "Value": "2562"
         },
         {
           "Name": "Content-Type",
@@ -1606,11 +1651,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EZAU1+sP/ssyipCsfZMfPGqyz81yj52aCjZMM0ucbE0=\""
+          "Value": "\"SR/cCvnR2mJP98GLRmmWOhiHmbr1mZDfVQFYe7FIKog=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 22:35:31 GMT"
+          "Value": "Tue, 24 Dec 2024 16:40:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1620,52 +1665,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EZAU1+sP/ssyipCsfZMfPGqyz81yj52aCjZMM0ucbE0="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.pyj0b0obov.js",
-      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2090"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EZAU1+sP/ssyipCsfZMfPGqyz81yj52aCjZMM0ucbE0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 22:35:31 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pyj0b0obov"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EZAU1+sP/ssyipCsfZMfPGqyz81yj52aCjZMM0ucbE0="
+          "Value": "sha256-SR/cCvnR2mJP98GLRmmWOhiHmbr1mZDfVQFYe7FIKog="
         }
       ]
     },
@@ -6366,7 +6366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
+          "Value": "Tue, 24 Dec 2024 13:50:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6411,7 +6411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
+          "Value": "Tue, 24 Dec 2024 13:50:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6456,7 +6456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
+          "Value": "Tue, 24 Dec 2024 13:50:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6493,7 +6493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 23 Dec 2024 14:22:19 GMT"
+          "Value": "Tue, 24 Dec 2024 13:50:32 GMT"
         },
         {
           "Name": "Cache-Control",

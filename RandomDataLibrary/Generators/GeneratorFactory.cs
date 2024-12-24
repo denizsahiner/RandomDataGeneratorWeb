@@ -9,6 +9,8 @@ public static class GeneratorFactory
             "firstName" => new DatabaseValueGenerator(connectionString, "firstName"),
             "lastName" => new DatabaseValueGenerator(connectionString, "lastName"),
             "gender" => new DatabaseValueGenerator(connectionString, "gender"),
+            "ssn"=>new DatabaseValueGenerator(connectionString,"ssn"),
+            "salary"=> new DatabaseValueGenerator(connectionString,"salary"),
             _ => throw new ArgumentException("Invalid data type selected")
         };
     }

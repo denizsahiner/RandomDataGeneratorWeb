@@ -7,7 +7,7 @@ using RandomDataGenerator.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlite("Data Source=fields.db"));
+    options.UseSqlite("Data Source=C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGeneratorDatabase.db"));
 
 // DataGeneratorService'i DI container'a kaydediyoruz
 builder.Services.AddScoped<DataGeneratorService>();

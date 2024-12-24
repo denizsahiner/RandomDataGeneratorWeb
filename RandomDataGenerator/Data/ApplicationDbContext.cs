@@ -7,14 +7,15 @@ namespace RandomDataGenerator.Data
     {
         public DbSet<Field> Fields { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlite("Data Source-fields.db");
+                optionsBuilder.UseSqlite("Data Source=C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGeneratorDatabase.db");
             }
                 
         }
     }
 }
+ 

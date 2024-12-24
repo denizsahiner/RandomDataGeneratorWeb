@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Data.Sqlite;
+
 namespace DataGeneratorLibrary.Generators
 {
     public static class AllowedColumns
@@ -38,16 +40,30 @@ namespace DataGeneratorLibrary.Generators
         // Veritabanından rastgele veri çekme
         public object GenerateRandomValue()
         {
-            using var connection = new SqlConnection(_connectionString);
-            connection.Open();
+            using (var connection = new SqliteConnection(_connectionString))
+            {
+                try
+                {
+                    connection.Open();
 
-            var query = $@"
-            SELECT TOP 1 {_columnName}
-            FROM DATA_TABLE
-            ORDER BY NEWID()"; // Rastgele bir değer seç
+                    var query = $@"
+                SELECT {_columnName}
+                FROM DATA_TABLE
+                ORDER BY RANDOM()
+                LIMIT 1";
 
-            using var command = new SqlCommand(query, connection);
-            return command.ExecuteScalar(); // Kolondan bir değeri döndür
+                    using (var command = new SqliteCommand(query, connection))
+                    {
+                        var result = command.ExecuteScalar(); // Rastgele bir değer döner
+                        return result ?? "Default Value";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Loglama veya hata işleme
+                    throw new Exception("Veritabanı bağlantısı sırasında hata oluştu.", ex);
+                }
+            }
         }
     }
 }
