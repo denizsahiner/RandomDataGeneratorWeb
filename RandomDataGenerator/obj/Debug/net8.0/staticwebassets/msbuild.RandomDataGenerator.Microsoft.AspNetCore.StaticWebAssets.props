@@ -1,23 +1,5 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>RandomDataGenerator</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/RandomDataGenerator</BasePath>
-      <RelativePath>css/site.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r077chfdgp</Fingerprint>
-      <Integrity>S7/sc7yQggYT+8U75STsVPD9QfNp+dHQBpzL4NxA7QQ=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Style.css'))">
       <SourceType>Package</SourceType>
       <SourceId>RandomDataGenerator</SourceId>
@@ -30,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k48sh5mte8</Fingerprint>
-      <Integrity>3GJ8c5ZP5UDwrurZCGVJZrERZcTfm/y1N245TBgdB74=</Integrity>
+      <Fingerprint>2dkwzbgkms</Fingerprint>
+      <Integrity>6sF+Ray1bAmG5sykOP4z+VQlUA8JsUQF3pZzUp8yDHY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Style.css'))</OriginalItemSpec>
@@ -66,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>590ocvyyh2</Fingerprint>
-      <Integrity>SR/cCvnR2mJP98GLRmmWOhiHmbr1mZDfVQFYe7FIKog=</Integrity>
+      <Fingerprint>1q1al1f9cy</Fingerprint>
+      <Integrity>OTCCzRj+zjYrpaNoSDDKE3+Kn8oGKyhPCZhkY/5Q/Ps=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
@@ -1098,23 +1080,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RandomDataGenerator.53844jgsg6.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RandomDataGenerator.o9mu98vvnl.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>RandomDataGenerator</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/RandomDataGenerator</BasePath>
-      <RelativePath>RandomDataGenerator.53844jgsg6.bundle.scp.css</RelativePath>
+      <RelativePath>RandomDataGenerator.o9mu98vvnl.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>53844jgsg6</Fingerprint>
-      <Integrity>8bEbmVkNcXFg/5UNPkRuu7m6Q+OBJ2WetJDeU4T5jwo=</Integrity>
+      <Fingerprint>o9mu98vvnl</Fingerprint>
+      <Integrity>xLpmUQHK1VfQyotoZGUJ8MMTMxt1Etmqh3zOCuuITxQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RandomDataGenerator.53844jgsg6.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\RandomDataGenerator.o9mu98vvnl.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

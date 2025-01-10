@@ -7,6 +7,7 @@ public static class GeneratorFactory
         return dataType switch
         {          
             "firstName" => new DatabaseValueGenerator(connectionString, "firstName"),
+            "middleName" => new DatabaseValueGenerator(connectionString, "middleName"),
             "lastName" => new DatabaseValueGenerator(connectionString, "lastName"),
             "gender" => new DatabaseValueGenerator(connectionString, "gender"),
             "ssn"=>new DatabaseValueGenerator(connectionString,"ssn"),

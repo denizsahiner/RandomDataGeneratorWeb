@@ -1,15 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Random DATA";
+    ViewData["Title"] = "Random Data ";
 }
 <link rel="stylesheet" href="~/css/Style.css" />
 
 <div class="container">
     <div class="header">
-        <h1>Random DATA Generator</h1>
-        <div class="menu-icon">&#9776;</div>
+        <h1>Random Data Generator</h1>
     </div>
     <div class="field-list">
-        <!-- İlk alanı varsayılan olarak ekledik -->
         <div class="field-container">
             <input type="text" placeholder="Field Name" />
             <select class="type-dropdown">
@@ -27,7 +25,11 @@
             <button class="deleteField" title="Delete Field">&times;</button>
         </div>
     </div>
+    <div>
+        <label for="intInput"> Rows: </label>
+        <input type="number" id="intInput" class="form-control" />
 
+    </div>
     <div class="add-buttons">
         <button id="addField">+ Add Another Field</button>
         <button id="generateData">Generate Data</button>
