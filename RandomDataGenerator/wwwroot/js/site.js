@@ -1,8 +1,8 @@
 ﻿document.getElementById('generateData').addEventListener('click', () => {
-
     const fields = [];
+    const rowCount = parseInt(document.getElementById('intInput').value, 10);
 
-    // Kullanıcıdan alınan alanları al
+    // Kullanıcıdan alınan alanları topla
     document.querySelectorAll('.field-container').forEach(container => {
         const fieldName = container.querySelector('input').value.trim();
         const fieldType = container.querySelector('select').value;
@@ -15,28 +15,31 @@
         }
     });
 
-    // Alan varsa veriyi gönder
     if (fields.length > 0) {
-        fetch('/Home/GenerateData', {
+        if (isNaN(rowCount) || rowCount <= 0) {
+            alert('Please enter a valid number of rows.');
+            return;
+        }
+
+        // Fetch isteği
+        fetch(`/Home/GenerateData?count=${rowCount}`, { // Burada rowCount'ı query string'e ekliyoruz
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
-            body: JSON.stringify(fields)
+            body: JSON.stringify(fields),
         })
             .then(response => response.json())
             .then(data => {
                 console.log('Generated Data:', data);
 
-                // Tabloyu temizle
+                // Tablo işlemleri...
                 const table = document.getElementById('generatedDataTable');
                 const tbody = table.querySelector('tbody');
                 const thead = table.querySelector('thead');
 
-              
                 tbody.innerHTML = ''; // Eski veriyi temizle
                 thead.innerHTML = ''; // Başlıkları temizle
-                
 
                 // Başlıkları oluştur
                 const headerRow = document.createElement("tr");
@@ -45,7 +48,7 @@
                     th.innerText = key.charAt(0).toUpperCase() + key.slice(1); // İlk harfi büyük yap
                     headerRow.appendChild(th);
                 });
-                thead.appendChild(headerRow); // Başlık satırını ekle
+                thead.appendChild(headerRow);
 
                 // Veriyi tabloya ekle
                 data.forEach((item) => {

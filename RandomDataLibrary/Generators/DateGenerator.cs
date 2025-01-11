@@ -6,15 +6,15 @@ namespace DataGeneratorLibrary.Generators
     public class DateGenerator : IGenerator
     {
         private static readonly Random RandomGenerator = new Random();
-        private readonly DateTime _latestDate = new DateTime(2024, 12, 31);
+        private readonly DateOnly _earliestDate = new DateOnly(1950, 1, 1);
+        private readonly DateOnly _latestDate = new DateOnly(2024, 12, 31);
 
         public string DataType => "Date";
 
         public object GenerateRandomValue()
-        {           
-            int range = (int)(_latestDate - DateTime.MinValue).TotalDays;
-           
-            return DateTime.MinValue.AddDays(RandomGenerator.Next(range));
-        }       
+        {
+            int range = (_latestDate.ToDateTime(new TimeOnly()) - _earliestDate.ToDateTime(new TimeOnly())).Days;
+            return _earliestDate.AddDays(RandomGenerator.Next(range));
+        }
     }
 }
