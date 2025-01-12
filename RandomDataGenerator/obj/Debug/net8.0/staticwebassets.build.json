@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KpAQfvlTY3thJCR7yQpZmOnDKpN4EjNRBd6Emtwhiq0=",
+  "Hash": "Wdrr6PXeIddc9+y6nhi9DTULfLSOU+uBSiLTVRbvD7Y=",
   "Source": "RandomDataGenerator",
   "BasePath": "_content/RandomDataGenerator",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2dkwzbgkms",
-      "Integrity": "6sF+Ray1bAmG5sykOP4z+VQlUA8JsUQF3pZzUp8yDHY=",
+      "Fingerprint": "pepyubtvny",
+      "Integrity": "39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Style.css"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3hypf9kjd2",
-      "Integrity": "OVIsE2fHqhP0VR+Uk4E2zhOxMcdlsWLF3zCA0DRWiZ4=",
+      "Fingerprint": "zj9awvqolj",
+      "Integrity": "IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1321,51 +1321,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/Style.2dkwzbgkms.css",
-      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2680"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6sF+Ray1bAmG5sykOP4z+VQlUA8JsUQF3pZzUp8yDHY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 10 Jan 2025 21:05:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2dkwzbgkms"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6sF+Ray1bAmG5sykOP4z+VQlUA8JsUQF3pZzUp8yDHY="
-        }
-      ]
-    },
-    {
       "Route": "css/Style.css",
       "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
       "Selectors": [],
@@ -1376,7 +1331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2680"
+          "Value": "3013"
         },
         {
           "Name": "Content-Type",
@@ -1384,11 +1339,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6sF+Ray1bAmG5sykOP4z+VQlUA8JsUQF3pZzUp8yDHY=\""
+          "Value": "\"39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 10 Jan 2025 21:05:54 GMT"
+          "Value": "Sun, 12 Jan 2025 11:00:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1398,7 +1353,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6sF+Ray1bAmG5sykOP4z+VQlUA8JsUQF3pZzUp8yDHY="
+          "Value": "sha256-39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg="
+        }
+      ]
+    },
+    {
+      "Route": "css/Style.pepyubtvny.css",
+      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3013"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 11:00:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pepyubtvny"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg="
         }
       ]
     },
@@ -1485,51 +1485,6 @@
       ]
     },
     {
-      "Route": "js/site.3hypf9kjd2.js",
-      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2785"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"OVIsE2fHqhP0VR+Uk4E2zhOxMcdlsWLF3zCA0DRWiZ4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 10 Jan 2025 18:29:46 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "3hypf9kjd2"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-OVIsE2fHqhP0VR+Uk4E2zhOxMcdlsWLF3zCA0DRWiZ4="
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1540,7 +1495,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2785"
+          "Value": "5777"
         },
         {
           "Name": "Content-Type",
@@ -1548,11 +1503,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OVIsE2fHqhP0VR+Uk4E2zhOxMcdlsWLF3zCA0DRWiZ4=\""
+          "Value": "\"IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 10 Jan 2025 18:29:46 GMT"
+          "Value": "Sun, 12 Jan 2025 12:31:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +1517,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OVIsE2fHqhP0VR+Uk4E2zhOxMcdlsWLF3zCA0DRWiZ4="
+          "Value": "sha256-IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.zj9awvqolj.js",
+      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 12 Jan 2025 12:31:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zj9awvqolj"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA="
         }
       ]
     },

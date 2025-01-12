@@ -219,3 +219,15 @@ C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\ob
 C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\obj\Debug\net8.0\RandomDataGenerator.pdb
 C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\obj\Debug\net8.0\RandomDataGenerator.genruntimeconfig.cache
 C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\obj\Debug\net8.0\ref\RandomDataGenerator.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\EPPlus.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\EPPlus.Interfaces.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataGenerator\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

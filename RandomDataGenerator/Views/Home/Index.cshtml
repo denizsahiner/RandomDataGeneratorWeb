@@ -28,120 +28,30 @@
     <div>
         <label for="intInput"> Rows: </label>
         <input type="number" id="intInput" class="form-control" />
-
     </div>
     <div class="add-buttons">
         <button id="addField">+ Add Another Field</button>
-        <button id="generateData">Generate Data</button>
+        <button id="generateData">Generate Dataset</button>
+        <button id="downloadData">Download Dataset</button>
+        <select id="selectFormat">
+            <option value="CSV">CSV</option>
+            <option value="excel">Excel</option>
+            <option value="SQL">SQL</option>
+            <option value="JSON">JSON</option>
+        </select>
     </div>
 
     <div id="generatedDataTableContainer">
         <table id="generatedDataTable">
             <thead>
                 <tr>
-                    
+                    <!-- Table header dynamically generated -->
                 </tr>
             </thead>
             <tbody>
-                
-                <!-- Tablo verileri buraya dinamik olarak eklenecek -->
+                <!-- Tablo datas dynamically generated -->
             </tbody>
         </table>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const fieldList = document.querySelector('.field-list');
-        const addFieldButton = document.getElementById('addField');
-        const generateDataButton = document.getElementById('generateData');
-        const tableBody = document.querySelector('#generatedDataTable tbody');
-
-        // Alan ekleme işlevi
-        const addField = () => {
-            const newField = document.createElement('div');
-            newField.className = 'field-container';
-            newField.innerHTML = `
-                <input type="text" placeholder="Field Name" />
-                <select class="type-dropdown">
-                    <option value="String">String</option>
-                    <option value="Number">Number</option>
-                    <option value="Boolean">Boolean</option>
-                    <option value="Date">Date</option>
-                    <option value="firstName">First Name</option>
-                    <option value="middleName">Middle Name</option>
-                    <option value="lastName">Surname</option>
-                    <option value="gender">Gender</option>
-                    <option value="ssn">Social Security Number</option>
-                    <option value="salary">Salary</option>
-                </select>
-                <button class="deleteField" title="Delete Field">&times;</button>
-            `;
-            fieldList.appendChild(newField);
-        };
-
-        // Alan silme işlevi
-        const deleteField = (e) => {
-            if (e.target.classList.contains('deleteField')) {
-                e.target.parentElement.remove();
-            }
-        };
-
-        // Veri üretme işlevi
-        const generateData = () => {
-            const fields = [];
-            fieldList.querySelectorAll('.field-container').forEach(container => {
-                const fieldName = container.querySelector('input').value.trim();
-                const fieldType = container.querySelector('select').value;
-
-                if (fieldName) {
-                    fields.push({ name: fieldName, type: fieldType });
-                }
-            });
-
-            if (fields.length === 0) {
-                alert('Please add at least one field before generating data.');
-                return;
-            }
-
-            fetch('/Home/GenerateData', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(fields),
-            })
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
-                .then((data) => {
-                    if (!Array.isArray(data) || data.length === 0) {
-                        alert('No data generated. Please check your backend logic.');
-                        return;
-                    }
-
-                    // Tabloyu temizle
-                    tableBody.innerHTML = '';
-
-                    // Gelen veriyi tabloya ekle
-                    data.forEach((item) => {
-                        const row = tableBody.insertRow();
-                        row.insertCell(0).textContent = item.name;
-                        row.insertCell(1).textContent = item.type;
-                        row.insertCell(2).textContent = item.generatedValue;
-                    });
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                    alert('An error occurred while generating data.');
-                });
-        };
-
-        // Olay bağlama
-        addFieldButton.addEventListener('click', addField);
-        fieldList.addEventListener('click', deleteField);
-        generateDataButton.addEventListener('click', generateData);
-    });
-</script>
+<script src="~/js/RandomDataGenerator.js"></script> <!-- importing javascript codes -->
