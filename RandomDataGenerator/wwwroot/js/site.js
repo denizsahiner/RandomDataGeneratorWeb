@@ -130,7 +130,7 @@
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                format: format, // Seçilen dosya formatını gönderiyoruz
+                format: format, 
             })
         })
             .then(response => response.blob())
@@ -138,7 +138,7 @@
                 const url = window.URL.createObjectURL(blob);
                 const a = document.createElement('a');
                 a.href = url;
-                a.download = `generated_data.${format.toLowerCase()}`;  // İndirilen dosyanın ismi
+                a.download = `generated_data.${format.toLowerCase()}`;  
                 a.click();
                 window.URL.revokeObjectURL(url);
             })

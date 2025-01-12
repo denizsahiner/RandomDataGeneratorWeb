@@ -14,7 +14,6 @@ namespace DataGeneratorLibrary.Generators
 
         public object GenerateRandomValue()
         {
-            return _random.Next(1, 100); // 1 ile 100 arasında rastgele sayı
-        }
+            return _random.Next(1, 100); 
     }
 }

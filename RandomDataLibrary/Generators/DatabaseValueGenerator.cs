@@ -23,7 +23,7 @@ namespace DataGeneratorLibrary.Generators
         private readonly string _connectionString;
         private readonly string _columnName;
 
-        // Constructor'da bağlantı dizesi ve kolon adı alır
+       
         public DatabaseValueGenerator(string connectionString, string columnName)
         {
             if (!AllowedColumns.Columns.Contains(columnName))
@@ -36,8 +36,7 @@ namespace DataGeneratorLibrary.Generators
         }
 
         public string DataType => _columnName;
-
-        // Veritabanından rastgele veri çekme
+                
         public object GenerateRandomValue()
         {
             using (var connection = new SqliteConnection(_connectionString))
@@ -54,13 +53,12 @@ namespace DataGeneratorLibrary.Generators
 
                     using (var command = new SqliteCommand(query, connection))
                     {
-                        var result = command.ExecuteScalar(); // Rastgele bir değer döner
+                        var result = command.ExecuteScalar(); 
                         return result ?? "Default Value";
                     }
                 }
                 catch (Exception ex)
-                {
-                    // Loglama veya hata işleme
+                {                    
                     throw new Exception("Veritabanı bağlantısı sırasında hata oluştu.", ex);
                 }
             }

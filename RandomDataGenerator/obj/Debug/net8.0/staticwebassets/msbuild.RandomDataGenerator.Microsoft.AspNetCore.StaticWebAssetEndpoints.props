@@ -24,17 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Dec 2024 22:51:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/RandomDataGenerator/js/site.gd595zlfhc.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gd595zlfhc"},{"Name":"integrity","Value":"sha256-dCROcR118qcY1g6/SJv4MZReU90txaAYNZDz9zvhY3g="},{"Name":"label","Value":"_content/RandomDataGenerator/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7183"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022dCROcR118qcY1g6/SJv4MZReU90txaAYNZDz9zvhY3g=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Jan 2025 14:17:33 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RandomDataGenerator/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5777"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Jan 2025 12:31:33 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/RandomDataGenerator/js/site.zj9awvqolj.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zj9awvqolj"},{"Name":"integrity","Value":"sha256-IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA="},{"Name":"label","Value":"_content/RandomDataGenerator/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5777"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022IRXckjK5F2S1NXgZc/Aj7xl2NLzqUMYyLOgVr3ggqSA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Jan 2025 12:31:33 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dCROcR118qcY1g6/SJv4MZReU90txaAYNZDz9zvhY3g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7183"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022dCROcR118qcY1g6/SJv4MZReU90txaAYNZDz9zvhY3g=\u0022"},{"Name":"Last-Modified","Value":"Sun, 12 Jan 2025 14:17:33 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/RandomDataGenerator/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

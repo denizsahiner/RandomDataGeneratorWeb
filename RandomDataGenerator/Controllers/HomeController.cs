@@ -39,7 +39,7 @@ namespace RandomDataGenerator.Controllers
 
                     foreach (var field in fields)
                     {
-                        // Null kontrolü
+                        
                         if (string.IsNullOrEmpty(field.Name))
                         {
                             return BadRequest(new { message = "Field name cannot be null or empty." });
@@ -63,14 +63,14 @@ namespace RandomDataGenerator.Controllers
                         }
 
                         var generatedValue = generator.GenerateRandomValue();
-                       
+
                         row[field.Name] = generatedValue;
                     }
 
                     generatedDataList.Add(row);
                 }
 
-                TempData["GeneratedData"] = JsonConvert.SerializeObject(generatedDataList);
+                HttpContext.Session.SetString("GeneratedData", JsonConvert.SerializeObject(generatedDataList));
 
                 return Json(generatedDataList);
             }
@@ -83,8 +83,8 @@ namespace RandomDataGenerator.Controllers
         [HttpPost("/Home/DownloadData")]
         public IActionResult DownloadData([FromBody] DownloadRequest request)
         {
-            
-            var dataJson = TempData["GeneratedData"] as string;
+
+            var dataJson = HttpContext.Session.GetString("GeneratedData");
             if (string.IsNullOrEmpty(dataJson))
             {
                 return BadRequest(new { message = "No Data available to download" });
@@ -97,7 +97,7 @@ namespace RandomDataGenerator.Controllers
                 return BadRequest(new { message = "No Data available to download" });
             }
 
-           
+
             if (request.Format == "CSV")
             {
                 string fileContent = ConvertToCSV(data);
@@ -105,13 +105,18 @@ namespace RandomDataGenerator.Controllers
             }
             else if (request.Format == "excel")
             {
-                byte[] fileContent = ConvertToExcel(data); 
+                byte[] fileContent = ConvertToExcel(data);
                 return File(fileContent, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "generated_data.xlsx");
             }
             else if (request.Format == "SQL")
             {
                 string fileContent = ConvertToSQL(data);
                 return File(Encoding.UTF8.GetBytes(fileContent), "application/sql", "generated_data.sql");
+            }
+            else if (request.Format == "JSON")
+            {
+                string fileContent = ConvertToJson(data);
+                return File(Encoding.UTF8.GetBytes(fileContent), "application/json", "generated_data.json");
             }
             else
             {
@@ -126,11 +131,11 @@ namespace RandomDataGenerator.Controllers
             var headers = string.Join(",", data[0].Keys);
 
             csv.AppendLine(headers);
-            
-            foreach(var row in data)
+
+            foreach (var row in data)
             {
                 var rowData = string.Join(",", row.Values);
-                csv.AppendLine(rowData);  
+                csv.AppendLine(rowData);
             }
             return csv.ToString();
         }
@@ -151,14 +156,13 @@ namespace RandomDataGenerator.Controllers
             {
                 var worksheet = package.Workbook.Worksheets.Add("Sheet1");
 
-                // Başlık satırını ekleyin
                 var columnHeaders = data[0].Keys.ToList();
                 for (int col = 0; col < columnHeaders.Count; col++)
                 {
                     worksheet.Cells[1, col + 1].Value = columnHeaders[col];
                 }
 
-                // Verileri ekleyin
+                
                 for (int row = 0; row < data.Count; row++)
                 {
                     var rowData = data[row].Values.ToList();
@@ -168,13 +172,17 @@ namespace RandomDataGenerator.Controllers
                     }
                 }
 
-                // Dosyayı bellek akışına kaydedin ve byte array olarak döndürün
                 using (var stream = new MemoryStream())
                 {
                     package.SaveAs(stream);
-                    return stream.ToArray(); // Byte array olarak döndürüyoruz
+                    return stream.ToArray(); 
                 }
             }
+        }
+        private string ConvertToJson(List<Dictionary<string, object>> data)
+        {
+           
+            return JsonConvert.SerializeObject(data, Formatting.Indented);
         }
     }
     public class DownloadRequest

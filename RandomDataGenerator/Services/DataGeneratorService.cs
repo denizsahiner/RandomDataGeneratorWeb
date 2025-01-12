@@ -15,7 +15,7 @@ namespace RandomDataGenerator.Services
     {
         private readonly IConfiguration _configuration;
 
-        // Constructor'da IConfiguration ile bağlantı dizesini alıyoruz
+        // Retrieving the connection string using IConfiguration in the constructor.
         public DataGeneratorService(IConfiguration configuration)
         {
             _configuration = configuration;
