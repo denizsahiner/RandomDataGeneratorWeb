@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿//Interface for creating data.
 namespace DataGeneratorLibrary.Generators
-{
-    public interface IGenerator
+{    public interface IGenerator
     {
         object GenerateRandomValue();
         string DataType { get; }
-
        
     }
 }

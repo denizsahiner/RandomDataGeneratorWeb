@@ -1,12 +1,9 @@
-﻿using System.Net;
-using System.Text;
+﻿using System.Text;
 using DataGeneratorLibrary.Generators;
 using Microsoft.AspNetCore.Mvc;
 using RandomDataGenerator.Models;
 using Newtonsoft.Json;
 using OfficeOpenXml;
-using System.IO;
-using System;
 
 namespace RandomDataGenerator.Controllers
 {
@@ -14,18 +11,20 @@ namespace RandomDataGenerator.Controllers
     {
         private readonly IConfiguration _configuration;
 
+        //Constructor to initialize configuration
         public HomeController(IConfiguration configuration)
         {
             _configuration = configuration;
             // EPPlus license configuration.
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
         }
-
+        
         public IActionResult Index()
         {
             return View();
         }
 
+        // API endpoint to generate random data
         [HttpPost("/Home/GenerateData")]
         public IActionResult GenerateData([FromBody] List<Field> fields, int count = 10)
         {
@@ -69,7 +68,7 @@ namespace RandomDataGenerator.Controllers
 
                     generatedDataList.Add(row);
                 }
-
+                // Store generated data in session
                 HttpContext.Session.SetString("GeneratedData", JsonConvert.SerializeObject(generatedDataList));
 
                 return Json(generatedDataList);
@@ -80,10 +79,12 @@ namespace RandomDataGenerator.Controllers
                 return StatusCode(500, new { message = "An error occurred while generating data", error = ex.Message });
             }
         }
+
+        // API endpoint to download generated data in various formats
         [HttpPost("/Home/DownloadData")]
         public IActionResult DownloadData([FromBody] DownloadRequest request)
         {
-
+            // Retrieve generated data from session
             var dataJson = HttpContext.Session.GetString("GeneratedData");
             if (string.IsNullOrEmpty(dataJson))
             {
@@ -185,6 +186,8 @@ namespace RandomDataGenerator.Controllers
             return JsonConvert.SerializeObject(data, Formatting.Indented);
         }
     }
+
+    // Model for download request
     public class DownloadRequest
     {
         public List<Field>? Fields { get; set; }

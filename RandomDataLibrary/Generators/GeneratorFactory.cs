@@ -23,6 +23,7 @@ public static class GeneratorFactory
             "Number" => new NumberGenerator(),
             "Boolean" => new BooleanGenerator(),
             "Date" => new DateGenerator(),   
+            "GUID" => new GuidGenerator(),
             _ => throw new ArgumentException("Invalid data type selected")
         };
     }

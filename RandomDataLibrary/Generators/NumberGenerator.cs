@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿//Class for generating data type "number"
 namespace DataGeneratorLibrary.Generators
 {
     public class NumberGenerator : IGenerator
@@ -14,6 +9,7 @@ namespace DataGeneratorLibrary.Generators
 
         public object GenerateRandomValue()
         {
-            return _random.Next(1, 100); 
+            return _random.Next(1, 100);
+        }
     }
 }

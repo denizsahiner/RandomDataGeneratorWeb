@@ -1,8 +1,6 @@
 ﻿using DataGeneratorLibrary.Generators;
-using Microsoft.Extensions.Configuration;
 using RandomDataGenerator.Models;
-using System;
-using System.Collections.Generic;
+
 
 namespace RandomDataGenerator.Services
 {
@@ -11,11 +9,12 @@ namespace RandomDataGenerator.Services
         List<object> GenerateData(List<Field> fields);
     }
 
+    // Service implementation for generating random data
     public class DataGeneratorService : IDataGeneratorService
     {
         private readonly IConfiguration _configuration;
 
-        // Retrieving the connection string using IConfiguration in the constructor.
+        // Retrieving the connection string using the IConfiguration in the constructor.
         public DataGeneratorService(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -37,6 +36,7 @@ namespace RandomDataGenerator.Services
 
                     IGenerator generator;
 
+                    // Check if the field type requires a database connection
                     if (AllowedColumns.Columns.Contains(field.Type))
                     {
                         var connectionString = _configuration.GetConnectionString("DefaultConnection");

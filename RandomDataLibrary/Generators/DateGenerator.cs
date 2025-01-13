@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿//Class for generating data type "date"
 
 namespace DataGeneratorLibrary.Generators
 {

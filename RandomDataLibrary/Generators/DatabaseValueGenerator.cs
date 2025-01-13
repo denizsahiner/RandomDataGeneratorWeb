@@ -1,7 +1,4 @@
-﻿using System;
-using System.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.Sqlite;
 
 namespace DataGeneratorLibrary.Generators
 {
@@ -46,10 +43,10 @@ namespace DataGeneratorLibrary.Generators
                     connection.Open();
 
                     var query = $@"
-                SELECT {_columnName}
-                FROM DATA_TABLE
-                ORDER BY RANDOM()
-                LIMIT 1";
+                    SELECT {_columnName}
+                    FROM DATA_TABLE
+                    ORDER BY RANDOM()
+                    LIMIT 1";
 
                     using (var command = new SqliteCommand(query, connection))
                     {
@@ -59,7 +56,7 @@ namespace DataGeneratorLibrary.Generators
                 }
                 catch (Exception ex)
                 {                    
-                    throw new Exception("Veritabanı bağlantısı sırasında hata oluştu.", ex);
+                    throw new Exception("An error occurred during the database connection.", ex);
                 }
             }
         }
