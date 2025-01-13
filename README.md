@@ -72,13 +72,16 @@ Random Data Generator is a web-based application built with ASP.NET Core MVC to 
 ## Screenshots
 
 ### Main Page
-![Field Creation](C:/Users/dksah/OneDrive/Masaüstü/screenshots_for_randomdatagenerator/screenshot_1.png)
+![Field Creation]![screenshot_1](https://github.com/user-attachments/assets/3dd030a7-7501-4851-9335-488f21f3d355)
+
 
 ### Data Creation
-![Data Table](C:/Users/dksah/OneDrive/Masaüstü/screenshots_for_randomdatagenerator/screenshot_2.png)
+![Data Table]![screenshot_2](https://github.com/user-attachments/assets/f02269d9-5b9c-40dd-bc1a-781e53e570a0)
+
 
 ### Export Options
-![Export Options](C:/Users/dksah/OneDrive/Masaüstü/screenshots_for_randomdatagenerator/screenshot_3.png)
+![Export Options]![screenshot_3](https://github.com/user-attachments/assets/308038d7-0c0a-40bc-8889-2fb205611de5)
+
 
 ---
 
@@ -86,7 +89,7 @@ Random Data Generator is a web-based application built with ASP.NET Core MVC to 
 
 ## Contact
 
-- **Author**: [Deniz Kaan Þahiner](https://github.com/denizsahiner)
-- **Authot**: [Erdem Diri](https://github.com/ErdemDiri)
+- **Author**: [Deniz Kaan Ãžahiner](https://github.com/denizsahiner)
 - **Email**: dksahiner@gmail.com
+- **Author**: [Erdem Diri](https://github.com/ErdemDiri)
 - **Email**: erdem.diri@hotmail.com
