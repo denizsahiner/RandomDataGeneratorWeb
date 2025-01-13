@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sBI6VKDO04ISrIPz4t5ttYsEH3hclqXN1nGPBlp94pY=",
+  "Hash": "4MiQHjdginvcyK9nerErbXpHdGZzzMleMo9Olzsx2/g=",
   "Source": "RandomDataGenerator",
   "BasePath": "_content/RandomDataGenerator",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pepyubtvny",
-      "Integrity": "39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg=",
+      "Fingerprint": "57w38t8rol",
+      "Integrity": "P152mp4RTK/ywlnkkTlNwKlSTGgl2FcVvSPRn0UvVMc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Style.css"
@@ -1321,6 +1321,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/Style.57w38t8rol.css",
+      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4471"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P152mp4RTK/ywlnkkTlNwKlSTGgl2FcVvSPRn0UvVMc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 13 Jan 2025 14:09:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "57w38t8rol"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-P152mp4RTK/ywlnkkTlNwKlSTGgl2FcVvSPRn0UvVMc="
+        }
+      ]
+    },
+    {
       "Route": "css/Style.css",
       "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
       "Selectors": [],
@@ -1331,7 +1376,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3013"
+          "Value": "4471"
         },
         {
           "Name": "Content-Type",
@@ -1339,11 +1384,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg=\""
+          "Value": "\"P152mp4RTK/ywlnkkTlNwKlSTGgl2FcVvSPRn0UvVMc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 11:00:13 GMT"
+          "Value": "Mon, 13 Jan 2025 14:09:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1353,52 +1398,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg="
-        }
-      ]
-    },
-    {
-      "Route": "css/Style.pepyubtvny.css",
-      "AssetFile": "C:\\Users\\dksah\\OneDrive\\Masaüstü\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3013"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 12 Jan 2025 11:00:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pepyubtvny"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Style.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-39CzXd2HlxfSEOBqnDM/WC1PgeigK7OAK1HssmiJvWg="
+          "Value": "sha256-P152mp4RTK/ywlnkkTlNwKlSTGgl2FcVvSPRn0UvVMc="
         }
       ]
     },
