@@ -72,17 +72,17 @@ Random Data Generator is a web-based application built with ASP.NET Core MVC to 
 ## Screenshots
 
 ### Main Page
-![Field Creation]![screenshot_1]![ss1](https://github.com/user-attachments/assets/953b5c8e-cca2-42f6-86c0-4125d9eca06e)
+(https://github.com/user-attachments/assets/953b5c8e-cca2-42f6-86c0-4125d9eca06e)
 
 
 
 ### Data Creation
-![Data Table]![screenshot_2]![ss2](https://github.com/user-attachments/assets/47c26212-ba54-40b1-aea2-5012f0a21066)
+(https://github.com/user-attachments/assets/47c26212-ba54-40b1-aea2-5012f0a21066)
 
 
 
 ### Export Options
-![Export Options]![screenshot_3]![ss3](https://github.com/user-attachments/assets/4f950fea-3120-414c-975b-2878db628e93)
+(https://github.com/user-attachments/assets/4f950fea-3120-414c-975b-2878db628e93)
 
 
 
