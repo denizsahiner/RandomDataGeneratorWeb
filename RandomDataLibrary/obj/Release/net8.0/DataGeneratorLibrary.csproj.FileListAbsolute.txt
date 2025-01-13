@@ -1,0 +1,15 @@
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\bin\Release\net8.0\DataGeneratorLibrary.deps.json
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\bin\Release\net8.0\DataGeneratorLibrary.runtimeconfig.json
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\bin\Release\net8.0\DataGeneratorLibrary.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\bin\Release\net8.0\DataGeneratorLibrary.pdb
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.csproj.AssemblyReference.cache
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.AssemblyInfoInputs.cache
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.AssemblyInfo.cs
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.sourcelink.json
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\refint\DataGeneratorLibrary.dll
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.pdb
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\DataGeneratorLibrary.genruntimeconfig.cache
+C:\Users\dksah\OneDrive\Masaüstü\WebRandomDataGenerator\RandomDataLibrary\obj\Release\net8.0\ref\DataGeneratorLibrary.dll

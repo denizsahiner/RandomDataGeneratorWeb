@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatalibrary\\generators\\generatorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|solutionrelative:randomdatalibrary\\generators\\generatorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatalibrary\\generators\\databasevaluegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|solutionrelative:randomdatalibrary\\generators\\databasevaluegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatagenerator\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|solutionrelative:randomdatagenerator\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatagenerator\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|solutionrelative:randomdatagenerator\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatalibrary\\generators\\booleangenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|solutionrelative:randomdatalibrary\\generators\\booleangenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatalibrary\\generators\\guidgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|solutionrelative:randomdatalibrary\\generators\\guidgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatalibrary\\generators\\numbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|solutionrelative:randomdatalibrary\\generators\\numbergenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatalibrary\\generators\\stringgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B5E78FB7-E305-4822-8B12-785F321069AC}|RandomDataLibrary\\DataGeneratorLibrary.csproj|solutionrelative:randomdatalibrary\\generators\\stringgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{10A26F0B-7BC4-4672-8749-D9607BD0FBD4}|Solution Items{10A26F0B-7BC4-4672-8749-D9607BD0FBD4}|C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{10A26F0B-7BC4-4672-8749-D9607BD0FBD4}|Solution Items{10A26F0B-7BC4-4672-8749-D9607BD0FBD4}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatagenerator\\services\\datageneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,14 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatagenerator\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|solutionrelative:randomdatagenerator\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatagenerator\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|solutionrelative:randomdatagenerator\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|c:\\users\\dksah\\onedrive\\masa\u00FCst\u00FC\\webrandomdatagenerator\\randomdatagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F763223F-422C-48B4-B36E-375F1636101F}|RandomDataGenerator\\RandomDataGenerator.csproj|solutionrelative:randomdatagenerator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,162 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GeneratorFactory.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\GeneratorFactory.cs",
-              "RelativeDocumentMoniker": "RandomDataLibrary\\Generators\\GeneratorFactory.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\GeneratorFactory.cs",
-              "RelativeToolTip": "RandomDataLibrary\\Generators\\GeneratorFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T10:50:50.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GuidGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\GuidGenerator.cs",
-              "RelativeDocumentMoniker": "RandomDataLibrary\\Generators\\GuidGenerator.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\GuidGenerator.cs",
-              "RelativeToolTip": "RandomDataLibrary\\Generators\\GuidGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T10:45:33.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Style.css",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
-              "RelativeDocumentMoniker": "RandomDataGenerator\\wwwroot\\css\\Style.css",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\css\\Style.css",
-              "RelativeToolTip": "RandomDataGenerator\\wwwroot\\css\\Style.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-13T09:47:38.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DataGeneratorService.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Services\\DataGeneratorService.cs",
-              "RelativeDocumentMoniker": "RandomDataGenerator\\Services\\DataGeneratorService.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Services\\DataGeneratorService.cs",
-              "RelativeToolTip": "RandomDataGenerator\\Services\\DataGeneratorService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBEAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T14:19:35.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "NumberGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\NumberGenerator.cs",
-              "RelativeDocumentMoniker": "RandomDataLibrary\\Generators\\NumberGenerator.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\NumberGenerator.cs",
-              "RelativeToolTip": "RandomDataLibrary\\Generators\\NumberGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T14:19:12.337Z",
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-01-13T11:39:39.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DatabaseValueGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\DatabaseValueGenerator.cs",
-              "RelativeDocumentMoniker": "RandomDataLibrary\\Generators\\DatabaseValueGenerator.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\DatabaseValueGenerator.cs",
-              "RelativeToolTip": "RandomDataLibrary\\Generators\\DatabaseValueGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
+              "Title": "DataGeneratorService.cs",
+              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Services\\DataGeneratorService.cs",
+              "RelativeDocumentMoniker": "RandomDataGenerator\\Services\\DataGeneratorService.cs",
+              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Services\\DataGeneratorService.cs",
+              "RelativeToolTip": "RandomDataGenerator\\Services\\DataGeneratorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T14:18:29.936Z",
+              "WhenOpened": "2025-01-13T11:08:34.916Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Program.cs",
-              "RelativeDocumentMoniker": "RandomDataGenerator\\Program.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Program.cs",
-              "RelativeToolTip": "RandomDataGenerator\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T12:46:16.987Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "RandomDataGenerator\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "RandomDataGenerator\\wwwroot\\js\\site.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-12T11:24:42.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "RandomDataGenerator\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "RandomDataGenerator\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-07T15:44:53.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "RandomDataGenerator\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataGenerator\\Controllers\\HomeController.cs",
               "RelativeToolTip": "RandomDataGenerator\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAIwAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAuwL0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T12:34:32.615Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 208,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StringGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\StringGenerator.cs",
-              "RelativeDocumentMoniker": "RandomDataLibrary\\Generators\\StringGenerator.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\StringGenerator.cs",
-              "RelativeToolTip": "RandomDataLibrary\\Generators\\StringGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T10:41:11.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BooleanGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\BooleanGenerator.cs",
-              "RelativeDocumentMoniker": "RandomDataLibrary\\Generators\\BooleanGenerator.cs",
-              "ToolTip": "C:\\Users\\dksah\\OneDrive\\Masa\u00FCst\u00FC\\WebRandomDataGenerator\\RandomDataLibrary\\Generators\\BooleanGenerator.cs",
-              "RelativeToolTip": "RandomDataLibrary\\Generators\\BooleanGenerator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T10:40:38.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T12:34:32.615Z"
             }
           ]
         }
