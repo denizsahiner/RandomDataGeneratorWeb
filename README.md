@@ -90,6 +90,6 @@ Random Data Generator is a web-based application built with ASP.NET Core MVC to 
 ## Contact
 
 - **Author**: [Deniz Kaan Þahiner](https://github.com/denizsahiner)
-- **Authot**: [Erdem Diri](https://github.com/ErdemDiri)
 - **Email**: dksahiner@gmail.com
+- **Author**: [Erdem Diri](https://github.com/ErdemDiri)
 - **Email**: erdem.diri@hotmail.com
